@@ -1,0 +1,17 @@
+.main-container {
+  display: flex;
+  width: 100%;
+}
+
+.main-left {
+  width: 15%;
+  display: fixed;
+  position: fixed;
+  z-index: 1;
+}
+
+.main-right {
+  margin-left: 280px;
+  padding: 0 10px;
+  width: 85%;
+}

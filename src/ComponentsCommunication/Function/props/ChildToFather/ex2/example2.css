@@ -1,0 +1,26 @@
+.father2-box {
+  padding: 0 10px;
+  display: flex;
+  border: 1px solid blue;
+}
+
+.father2-box p {
+  padding: 0 5px;
+}
+
+.child2-box {
+  margin: 0 10px;
+  padding: 0 10px;
+  display: flex;
+  border: 1px solid red;
+}
+
+.child2-box p {
+  padding: 0 5px;
+}
+
+.child2-btn {
+  margin: 10px;
+  padding: 0 10px;
+  font-size: 1rem;
+}

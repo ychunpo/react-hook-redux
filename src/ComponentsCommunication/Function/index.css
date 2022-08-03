@@ -1,6 +1,5 @@
-.container {
-  margin: 5px;
-  padding: 10px;
-  width: 50%;
+.fc-container {
+  margin: 5px 0;
+  padding: 0 15px;
   border: 1px solid red;
 }

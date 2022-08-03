@@ -1,22 +1,24 @@
 import React from 'react';
 import Sidebar from '../../components/Sidebar/Sidebar';
-import './home.css';
+import ReactArray from '../../BasicInfo/ReactArray/ReactArray';
+import '../pages.css';
 
-const Home = () => {
+const ReactBasic = () => {
   const topic = [
     {
-      name: 'Home',
+      name: 'Basic',
+      sub: 'Data Handle',
     }
   ];
 
   const listData = [
     {
-      name: 'Class',
-      link: "/component/class"
+      name: 'Array',
+      link: "/react-basic/array"
     },
     {
-      name: 'Function',
-      link: "/component/function"
+      name: 'List',
+      link: "/react-basic/list"
     }
   ];
 
@@ -29,11 +31,11 @@ const Home = () => {
         />
       </div>
       <div className='main-right'>
-
+        <ReactArray />
       </div>
 
     </div>
   )
 }
 
-export default Home
+export default ReactBasic;

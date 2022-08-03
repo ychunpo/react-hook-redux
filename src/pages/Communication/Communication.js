@@ -1,22 +1,24 @@
 import React from 'react';
 import Sidebar from '../../components/Sidebar/Sidebar';
-import './home.css';
+import FunctionCommunication from '../../ComponentsCommunication/Function';
+import ClassCommunication from '../../ComponentsCommunication/Class';
+import '../pages.css';
 
-const Home = () => {
+const Communication = () => {
   const topic = [
     {
-      name: 'Home',
+      name: 'Communication',
     }
   ];
 
   const listData = [
     {
       name: 'Class',
-      link: "/component/class"
+      link: "#react-class"
     },
     {
       name: 'Function',
-      link: "/component/function"
+      link: "#react-function"
     }
   ];
 
@@ -29,11 +31,12 @@ const Home = () => {
         />
       </div>
       <div className='main-right'>
-
+        <ClassCommunication />
+        <FunctionCommunication />
       </div>
 
     </div>
   )
 }
 
-export default Home
+export default Communication;
