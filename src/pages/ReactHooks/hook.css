@@ -1,0 +1,13 @@
+.example-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+  padding: 5px;
+  justify-content: space-around;
+}
+
+.example-container {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid red;
+}
