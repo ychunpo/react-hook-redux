@@ -10,4 +10,3 @@ test('renders learn react link', () => {
 <Route path="/react-api" element={<ReactAPI />} />
 
 
-<Route path="/react-mapInput" element={<MapInput />} />

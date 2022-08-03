@@ -9,7 +9,7 @@ import ReactBasic from './pages/ReactBasic/ReactBasic';
 import ReactRedux from './pages/ReactRedux/ReactRedux';
 import Communication from './pages/Communication/Communication';
 import BeautDnD from './BeautifulDnDTable/pages/BeautDnD';
-//import MapInput from './pages/MapInput/MapInput';
+import MapInput from './pages/MapInput/MapInput';
 import './App.css';
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
           <Route path="/react-redux" element={<ReactRedux />} />
           <Route path="/react-communication" element={<Communication />} />
           <Route path="/react-dnd" element={<BeautDnD />} />
+          <Route path="/react-mapInput" element={<MapInput />} />
         </Routes>
       </div>
     </div>
