@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+
+.slow-example-container {
+  font-family: "Roboto Slab";
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.slow-wrapper {
+  width: 250px;
+}
+
+.slow-inputGroup {
+  // display: flex;
+  // align-items: center;
+  margin: 0 10px 25px 10px;
+  text-align: left;
+  // width: 100%;
+  // justify-content: space-between;
+}
+
+.slow-input {
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid #0abde3;
+  color: #0abde3;
+  padding: 15px;
+  font-size: 30px;
+  width: 85%;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.slow-doubleNumber {
+  display: flex;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.slow-btn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 15px;
+  margin: 0 40px;
+  text-align: center;
+  color: #0abde3;
+  border: 1px solid #0abde3;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0);
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.slow-span {
+  color: #0abde3;
+  opacity: 0.4;
+  display: inline-block;
+  margin-right: 10px;
+}

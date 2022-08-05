@@ -1,14 +1,17 @@
 import React from 'react'
+import RenderCount from './example/RenderCount'
+import ReplaceUseState from './example/ReplaceUseState'
 
 const HookUseRef = () => {
   return (
-    <>
-      <h2 id='useRef'>useRef</h2>
+    <div id='useRef'>
+      <h2>useRef</h2>
       <div className='example-item'>
-
+        <RenderCount />
+        <ReplaceUseState />
       </div>
       <hr />
-    </>
+    </div>
   )
 }
 

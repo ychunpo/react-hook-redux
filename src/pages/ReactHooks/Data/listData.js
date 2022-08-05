@@ -64,8 +64,4 @@ export const listData = [
     name: 'Library: useInsertionEffect',
     link: "#useInsertionEffect"
   },
-  {
-    name: 'Other: memo',
-    link: "#memo"
-  },
 ];

@@ -10,11 +10,10 @@ import Example3 from './example/Example3';
 import Example4 from './example/Example4';
 import Example5 from './example/Example5';
 
-
 const HookUseEffect = () => {
   return (
-    <>
-      <h2 id='useEffect'>useEffect</h2>
+    <div id='useEffect'>
+      <h2>useEffect</h2>
       <div className='example-item'>
         <Once />
         <AfterEveryRender />
@@ -26,10 +25,9 @@ const HookUseEffect = () => {
         <Example3 />
         <Example4 />
         <Example5 />
-
       </div>
       <hr />
-    </>
+    </div>
   )
 }
 

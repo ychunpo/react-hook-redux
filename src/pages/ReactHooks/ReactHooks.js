@@ -16,10 +16,12 @@ import HookUseTransition from './pages/UseTransition/HookUseTransition';
 import HookUseId from './pages/UseId/HookUseId';
 import HookUseSyncExternalStore from './pages/UseSyncExternalStore/HookUseSyncExternalStore';
 import HookUseInsertionEffect from './pages/UseInsertionEffect/HookUseInsertionEffect';
-import OtherMemo from './pages/OtherMemo';
 import '../pages.css';
 import './hook.css'
-import Image1 from './ImageComponent/image1/Image1';
+import Image1 from './ImageComponent/imageBox/Image1';
+import Image2 from './ImageComponent/imageBox/image2';
+import Image3 from './ImageComponent/imageBox/image3';
+import Image4 from './ImageComponent/imageBox/image4';
 
 const ReactHooks = () => {
 
@@ -32,16 +34,22 @@ const ReactHooks = () => {
         />
       </div>
       <div className='main-right'>
-        <div>
+        <div className='hook-image-group'>
           <Image1 />
         </div>
         <HookUseState />
         <HookUseEffect />
         <HookUseContext />
         <HookUseReducer />
+        <div className='hook-image-group'>
+          <Image2 />
+          <Image3 />
+        </div>
         <HookUseCallback />
-        <HookUseReducer />
         <HookUseMemo />
+        <div>
+          <Image4 />
+        </div>
         <HookUseRef />
         <HookUseImperativeHandle />
         <HookUseLayoutEffect />
@@ -51,7 +59,6 @@ const ReactHooks = () => {
         <HookUseId />
         <HookUseSyncExternalStore />
         <HookUseInsertionEffect />
-        <OtherMemo />
       </div>
     </div>
   )

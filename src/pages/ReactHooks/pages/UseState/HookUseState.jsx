@@ -7,8 +7,8 @@ import Example4 from './example/Example4';
 const HookUseState = () => {
 
   return (
-    <>
-      <h2 id='useState'>useState</h2>
+    <div id='useState'>
+      <h2>useState</h2>
       <div className='example-item'>
         <Example1 />
         <Example2 />
@@ -16,7 +16,7 @@ const HookUseState = () => {
         <Example4 />
       </div>
       <hr />
-    </>
+    </div>
   )
 }
 
