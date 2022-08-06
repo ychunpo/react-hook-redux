@@ -1,9 +1,20 @@
-.example-item {
+.example-group {
   display: flex;
   flex-wrap: wrap;
-  margin: 5px;
-  padding: 5px;
-  justify-content: space-around;
+  justify-content: start;
+  gap: 0 10px;
+}
+
+.example-group-title {
+  margin-left: 15px;
+  width: 100%;
+  height: 50px;
+  color: darkblue;
+}
+
+.example-group-title span {
+  color: red;
+  font-size: medium;
 }
 
 .example-container {
@@ -14,4 +25,8 @@
 
 .hook-image-group {
   display: flex;
+}
+
+.title-context-center {
+  text-align: center;
 }

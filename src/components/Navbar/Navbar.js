@@ -5,9 +5,7 @@ import './navbar.css';
 const Navbar = () => {
   return (
     <div className="navbar-container">
-
       <div className="navbar-main">
-
         <ul className="navbar-list">
           <li className="navbar-item">
             <Link to="/" className="navbar-link">
@@ -20,13 +18,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="navbar-item">
-            <Link to="/react-hooks" className="navbar-link">
-              Hook
+            <Link to="/react-api" className="navbar-link">
+              組件API
             </Link>
           </li>
           <li className="navbar-item">
-            <Link to="/react-api" className="navbar-link">
-              API
+            <Link to="/react-hooks" className="navbar-link">
+              Hook
             </Link>
           </li>
           <li className="navbar-item">

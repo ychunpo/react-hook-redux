@@ -6,7 +6,7 @@ const HookUseMemo = () => {
   return (
     <div id='useMemo'>
       <h2>useMemo</h2>
-      <div className='example-item'>
+      <div className='example-group'>
         <SlowAppNoUseMemo />
         <SlowAppUseMemo />
       </div>

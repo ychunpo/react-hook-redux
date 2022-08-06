@@ -7,13 +7,11 @@ const Example2 = () => {
   // console.log('B: ', count)
 
   return (
-    <>
-      <div className='example-container'>
-        <h3>Example: 2</h3>
-        <p>No 2 Pass the Function Count: {count}</p>
-        <button onClick={() => setCount(prev => prev + 1)}>+ 1</button>
-      </div>
-    </>
+    <div className='example-container'>
+      <h3>Example: 2</h3>
+      <p>No 2 Pass the Function Count: {count}</p>
+      <button onClick={() => setCount(prev => prev + 1)}>+ 1</button>
+    </div>
   )
 }
 

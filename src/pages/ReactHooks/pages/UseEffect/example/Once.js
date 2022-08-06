@@ -10,7 +10,7 @@ const Once = () => {
 
   return (
     <div className='example-container'>
-      <h3>Example: Once</h3>
+      <h3>Example: Once Render</h3>
       <p>**useEffect run once**</p>
       <p>Count Number: {count}</p>
     </div>

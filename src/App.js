@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Logo from './components/Navbar/Logo';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
 import ReactBasic from './pages/ReactBasic/ReactBasic';
 import ReactHooks from './pages/ReactHooks/ReactHooks';
@@ -17,6 +18,7 @@ function App() {
     <div className="App">
       <Logo />
       <Navbar />
+
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -29,6 +31,7 @@ function App() {
           <Route path="/react-mapInput" element={<MapInput />} />
         </Routes>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -5,7 +5,7 @@ const HookUseCallback = () => {
   return (
     <div id='useCallback'>
       <h2>UseCallback</h2>
-      <div className='example-item'>
+      <div className='example-group'>
         <ListAppUseCallback />
       </div>
       <hr />

@@ -18,10 +18,10 @@ import HookUseSyncExternalStore from './pages/UseSyncExternalStore/HookUseSyncEx
 import HookUseInsertionEffect from './pages/UseInsertionEffect/HookUseInsertionEffect';
 import '../pages.css';
 import './hook.css'
-import Image1 from './ImageComponent/imageBox/Image1';
-import Image2 from './ImageComponent/imageBox/image2';
-import Image3 from './ImageComponent/imageBox/image3';
-import Image4 from './ImageComponent/imageBox/image4';
+import Image1 from './ImageComponent/HookImageBox/Image1';
+import Image2 from './ImageComponent/HookImageBox/image2';
+import Image3 from './ImageComponent/HookImageBox/image3';
+import Image4 from './ImageComponent/HookImageBox/image4';
 
 const ReactHooks = () => {
 

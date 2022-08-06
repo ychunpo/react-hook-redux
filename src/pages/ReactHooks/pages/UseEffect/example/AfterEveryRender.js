@@ -5,12 +5,12 @@ const AfterEveryRender = () => {
 
   useEffect(() => {
     console.log('render');
-    document.title = `You clicked ${count} times`;
+    //document.title = `You clicked ${count} times`;
   })
 
   return (
     <div className='example-container'>
-      <h3>Example: AfterEveryRender</h3>
+      <h3>After Every Render</h3>
       <p>You clicked {count} times</p>
       <button onClick={() => setCount(count + 1)}>
         Click me

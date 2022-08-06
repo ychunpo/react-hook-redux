@@ -6,7 +6,7 @@ const HookUseRef = () => {
   return (
     <div id='useRef'>
       <h2>useRef</h2>
-      <div className='example-item'>
+      <div className='example-group'>
         <RenderCount />
         <ReplaceUseState />
       </div>

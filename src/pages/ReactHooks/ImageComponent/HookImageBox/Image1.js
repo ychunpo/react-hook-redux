@@ -1,6 +1,6 @@
 import React from 'react';
 import image1 from '../../../../assets/image1.jpeg';
-import '../image.css';
+import '../hook-image.css';
 
 const Image1 = () => {
   return (

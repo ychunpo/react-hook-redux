@@ -6,62 +6,62 @@ export const topic = [
 
 export const listData = [
   {
-    name: 'Basic: useState',
+    name: 'useState',
     link: "#useState"
   },
   {
-    name: 'Basic: useEffect',
+    name: 'useEffect',
     link: "#useEffect"
   },
   {
-    name: 'Basic: useContext',
+    name: 'useContext',
     link: "#useContext"
   },
   {
-    name: 'Additional: useReducer',
+    name: 'useReducer',
     link: "#useReducer"
   }, {
-    name: 'Additional: useCallback',
+    name: 'useCallback',
     link: "#useCallback"
   },
   {
-    name: 'Additional: useMemo',
+    name: 'useMemo',
     link: "#useMemo"
   },
   {
-    name: 'Additional: useRef',
+    name: 'useRef',
     link: "#useRef"
   },
   {
-    name: 'Additional: useImperativeHandle',
+    name: 'useImperativeHandle',
     link: "#useImperativeHandle"
   },
   {
-    name: 'Additional: useLayoutEffect',
+    name: 'useLayoutEffect',
     link: "#useLayoutEffect"
   },
   {
-    name: 'Additional: useDebugValue',
+    name: 'useDebugValue',
     link: "#useDebugValue"
   },
   {
-    name: 'Additional: useDeferredValue',
+    name: 'useDeferredValue',
     link: "#useDeferredValue"
   },
   {
-    name: 'Additional: useTransition',
+    name: 'useTransition',
     link: "#useTransition"
   },
   {
-    name: 'Additional: useId',
+    name: 'useId',
     link: "#useId"
   },
   {
-    name: 'Library: useSyncExternalStore',
+    name: 'useSyncExternalStore',
     link: "#useSyncExternalStore"
   },
   {
-    name: 'Library: useInsertionEffect',
+    name: 'useInsertionEffect',
     link: "#useInsertionEffect"
   },
 ];
