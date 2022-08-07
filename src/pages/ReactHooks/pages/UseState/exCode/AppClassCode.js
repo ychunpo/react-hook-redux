@@ -13,6 +13,7 @@ export class AppClass extends Component {
       count: 0,
     };
   };
+
   render() {
     const { count } = this.state;
     return (
@@ -25,13 +26,15 @@ export class AppClass extends Component {
             <Button variant="outlined" color="success"
               onClick={() => this.setState({
                 count: count + 1
-              })}>
+              })}
+            >
               +
             </Button>
             <Button variant="outlined" color="secondary"
               onClick={() => this.setState({
                 count: count - 1
-              })}>
+              })}
+            >
               -
             </Button>
           </ButtonGroup>
@@ -44,7 +47,7 @@ export class AppClass extends Component {
 export default AppClass;
 `.trim();
 
-const sample = () => {
+const AppClassCode = () => {
 
   return (
     <>
@@ -53,4 +56,4 @@ const sample = () => {
   )
 }
 
-export default sample;
+export default AppClassCode;

@@ -23,6 +23,10 @@
   border: 1px solid red;
 }
 
+.example-container span {
+  color: chocolate;
+}
+
 .hook-image-group {
   display: flex;
 }

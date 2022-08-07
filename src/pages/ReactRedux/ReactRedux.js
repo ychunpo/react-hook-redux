@@ -1,5 +1,6 @@
 import React from 'react';
 import Sidebar from '../../components/Sidebar/Sidebar';
+import UnderConstruction from '../../components/UnderConstruction';
 
 const ReactRedux = () => {
   const topic = [
@@ -29,9 +30,8 @@ const ReactRedux = () => {
         />
       </div>
       <div className='main-right'>
-
+        <UnderConstruction />
       </div>
-
     </div>
   )
 }

@@ -37,16 +37,6 @@ const Navbar = () => {
               Communication
             </Link>
           </li>
-          <li className="navbar-item">
-            <Link to="/react-dnd" className="navbar-link">
-              DND
-            </Link>
-          </li>
-          <li className="navbar-item">
-            <Link to="/react-mapinput" className="navbar-link">
-              MapInput
-            </Link>
-          </li>
         </ul>
       </div>
     </div>

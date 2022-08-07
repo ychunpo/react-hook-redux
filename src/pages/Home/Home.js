@@ -1,6 +1,8 @@
 import React from 'react';
+import CssBaseline from '@mui/material/CssBaseline';
 import Sidebar from '../../components/Sidebar/Sidebar';
-import './home.css';
+import Overview from './Overview';
+import Other from './Other';
 
 const Home = () => {
   const topic = [
@@ -11,17 +13,18 @@ const Home = () => {
 
   const listData = [
     {
-      name: 'Class',
-      link: "/component/class"
+      name: 'Overview',
+      link: "#Overview"
     },
     {
-      name: 'Function',
-      link: "/component/function"
+      name: 'Other',
+      link: "#Other"
     }
   ];
 
   return (
     <div className='main-container'>
+
       <div className='main-left'>
         <Sidebar
           topic={topic}
@@ -29,9 +32,15 @@ const Home = () => {
         />
       </div>
       <div className='main-right'>
-
+        <Overview />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <Other />
       </div>
-
     </div>
   )
 }

@@ -23,6 +23,8 @@ const ReactAPI = () => {
         />
       </div>
       <div className='main-right'>
+        <h1>This page is under construction......</h1>
+        <br />
         <APIComponent />
         <hr />
         <APIPureComponent />
@@ -41,6 +43,9 @@ const ReactAPI = () => {
         <hr />
         <APIStrickMode />
         <hr />
+        <br />
+        <br />
+        <br />
       </div>
     </div>
   )

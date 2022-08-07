@@ -43,7 +43,7 @@ function AppHook() {
 export default AppHook;
 `.trim();
 
-const sample = () => {
+const AppHookCode = () => {
 
   return (
     <>
@@ -52,4 +52,4 @@ const sample = () => {
   )
 }
 
-export default sample;
+export default AppHookCode;

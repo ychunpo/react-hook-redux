@@ -1,6 +1,6 @@
 import React from 'react'
 
-const OtherMemo = () => {
+const APIMemo = () => {
   return (
     <div>
       memo
@@ -8,4 +8,4 @@ const OtherMemo = () => {
   )
 }
 
-export default OtherMemo
+export default APIMemo;

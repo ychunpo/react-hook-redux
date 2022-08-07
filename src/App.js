@@ -18,7 +18,6 @@ function App() {
     <div className="App">
       <Logo />
       <Navbar />
-
       <div>
         <Routes>
           <Route path="/" element={<Home />} />

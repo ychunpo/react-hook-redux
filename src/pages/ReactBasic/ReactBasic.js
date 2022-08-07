@@ -1,6 +1,7 @@
 import React from 'react';
 import Sidebar from '../../components/Sidebar/Sidebar';
-import ReactArray from '../../BasicInfo/ReactArray/ReactArray';
+import UnderConstruction from '../../components/UnderConstruction';
+//import ReactArray from '../../BasicInfo/ReactArray/ReactArray';
 import '../pages.css';
 
 const ReactBasic = () => {
@@ -31,7 +32,7 @@ const ReactBasic = () => {
         />
       </div>
       <div className='main-right'>
-        <ReactArray />
+        <UnderConstruction />
       </div>
 
     </div>

@@ -10,7 +10,7 @@ const Logo = () => {
         <img className="logo-size" src={logo} alt='Logo' />
       </Link>
       <div className="navbar-title">
-        <p>React Practices</p>
+        <p>React Reference</p>
       </div>
     </div>
   )

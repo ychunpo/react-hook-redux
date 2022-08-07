@@ -19,7 +19,7 @@ const Communication = () => {
     {
       name: 'Function',
       link: "#react-function"
-    }
+    },
   ];
 
   return (
