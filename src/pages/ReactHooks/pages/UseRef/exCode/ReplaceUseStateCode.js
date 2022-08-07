@@ -1,3 +1,7 @@
+import React from 'react';
+import PrismRender from '../../../../../components/Prism/PrismRender';
+
+const code = `
 import React, { useState, useRef } from 'react';
 import './render_count.scss';
 
@@ -22,11 +26,11 @@ const ReplaceUseState = () => {
         <section className="useRef-border">
 
           <div className="useRef-values">
-            <span>useState value: ${stateExp}</span>
+            <span>useState value: \${stateExp}</span>
             <button className='useRef-btn' onClick={spendStateMoney}>Spend</button>
           </div>
           <div className="useRef-values">
-            <span>useRef value: ${refExp.current}</span>
+            <span>useRef value: \${refExp.current}</span>
             <button className='useRef-btn' onClick={spendRefMoney}>Spend</button>
           </div>
         </section>
@@ -36,3 +40,15 @@ const ReplaceUseState = () => {
 }
 
 export default ReplaceUseState;
+`.trim();
+
+const ReplaceUseStateCode = () => {
+
+  return (
+    <>
+      <PrismRender code={code} />
+    </>
+  )
+}
+
+export default ReplaceUseStateCode;

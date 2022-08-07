@@ -15,13 +15,13 @@ const HookUseContext = () => {
 
         <div className='case-item-group'>
           <div className='case-item'>
-            <div>
+            <div className='case-position'>
               <WithoutUseContext />
             </div>
             <WithoutUseContextCode />
           </div>
           <div className='case-item'>
-            <div>
+            <div className='case-position'>
               <WithUseContext />
             </div>
             <WithUseContextCode />

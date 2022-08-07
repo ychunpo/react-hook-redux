@@ -24,13 +24,13 @@ const HookUseState = () => {
         </div>
         <div className='case-item-group'>
           <div className='case-item'>
-            <div>
+            <div className='case-position'>
               <AppClass />
             </div>
             <AppClassCode />
           </div>
           <div className='case-item'>
-            <div>
+            <div className='case-position'>
               <AppHook />
             </div>
             <AppHookCode />
@@ -42,7 +42,7 @@ const HookUseState = () => {
         </div>
         <div className='case-item-group'>
           <div className='case-item'>
-            <div>
+            <div className='case-position'>
               <UpdateCompare />
             </div>
             <UpdateCompareCode />
@@ -50,21 +50,21 @@ const HookUseState = () => {
         </div>
 
         <div className='case-item'>
-          <div>
+          <div className='case-position'>
             <Example1 />
           </div>
           <ExCode1 />
         </div>
 
         <div className='case-item'>
-          <div>
+          <div className='case-position'>
             <Example2 />
           </div>
           <ExCode2 />
         </div>
 
         <div className='case-item'>
-          <div>
+          <div className='case-position'>
             <Example3 />
           </div>
           <ExCode3 />

@@ -1,5 +1,4 @@
 import React from 'react';
-import CssBaseline from '@mui/material/CssBaseline';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import Overview from './Overview';
 import Other from './Other';

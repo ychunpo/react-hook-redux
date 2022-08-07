@@ -1,3 +1,7 @@
+import React from 'react';
+import PrismRender from '../../../../../components/Prism/PrismRender';
+
+const code = `
 import React, { useState, useEffect, useRef } from 'react';
 import './render_count.scss';
 
@@ -37,3 +41,15 @@ const RenderCount = () => {
 }
 
 export default RenderCount;
+`.trim();
+
+const RenderCountCode = () => {
+
+  return (
+    <>
+      <PrismRender code={code} />
+    </>
+  )
+}
+
+export default RenderCountCode;

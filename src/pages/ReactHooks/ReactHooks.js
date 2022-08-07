@@ -22,6 +22,7 @@ import Image1 from './ImageComponent/HookImageBox/Image1';
 import Image2 from './ImageComponent/HookImageBox/image2';
 import Image3 from './ImageComponent/HookImageBox/image3';
 import Image4 from './ImageComponent/HookImageBox/image4';
+import Image5 from './ImageComponent/HookImageBox/image5';
 
 const ReactHooks = () => {
 
@@ -38,6 +39,9 @@ const ReactHooks = () => {
           <Image1 />
         </div>
         <HookUseState />
+        <div className='hook-image-group'>
+          <Image5 />
+        </div>
         <HookUseEffect />
         <HookUseContext />
         <HookUseReducer />
