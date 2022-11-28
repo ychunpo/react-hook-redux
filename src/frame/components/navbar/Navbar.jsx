@@ -67,7 +67,7 @@ function Navbar(props) {
           <Box sx={{ display: 'flex' }}>
             <Logo />
             <Typography variant="h5" sx={{ color: 'black', ml: 1 }}>
-              React Book
+              React Practices
             </Typography>
           </Box>
 

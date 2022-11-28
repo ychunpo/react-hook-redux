@@ -55,13 +55,6 @@ const ReactHooks = () => {
             )
           })
         }
-
-
-
-
-
-
-
       </Container>
     </>
   )
