@@ -1,0 +1,33 @@
+.side-container {
+  width: 90%;
+  height: 87vh;
+  border-right: 0.5px solid rgb(158, 51, 51);
+  background-color: beige;
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+}
+
+.side-title {
+  margin: 0 2px;
+  padding: 0.1px 20px;
+  font-size: 1.2rem;
+}
+
+.side-group {
+  padding-right: 60px;
+}
+
+.side-item {
+  margin: 4px 0;
+  padding: 5px 0;
+}
+
+.side-list {
+  list-style: none;
+}
+
+.side-link {
+  font-size: 1rem;
+  text-decoration: none;
+}

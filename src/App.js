@@ -1,36 +1,35 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Logo from './components/Navbar/Logo';
-import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer';
-import Home from './pages/Home/Home';
-import ReactBasic from './pages/ReactBasic/ReactBasic';
-import ReactHooks from './pages/ReactHooks/ReactHooks';
-import ReactAPI from './pages/ReactAPI/ReactAPI'
-import ReactRedux from './pages/ReactRedux/ReactRedux';
-import Communication from './pages/Communication/Communication';
+import Layout from './frame/Layout';
+import Home from './Title/home/Home';
+import ReactHooks from './Title/reactHooks/ReactHooks';
+import ReactComponents from './Title/reactComponents/ReactComponents'
+import ReactRedux from './Title/reactRedux/ReactRedux';
+import ReactRouter from './Title/reactRouter/ReactRouter';
+import Communication from './Title/reactCommunication/Communication';
 import BeautDnD from './BeautifulDnDTable/pages/BeautDnD';
-import MapInput from './pages/MapInput/MapInput';
+import MapInput from './Title/mapInput/MapInput';
+import Navbar from './frame/components/navbar/Navbar';
 import './App.css';
+//import Sidebar from './components/Sidebar/Sidebar';
 
 function App() {
   return (
     <div className="App">
-      <Logo />
       <Navbar />
-      <div>
-        <Routes>
+      <Routes>
+        <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/react-basic" element={<ReactBasic />} />
-          <Route path="/react-hooks" element={<ReactHooks />} />
-          <Route path="/react-api" element={<ReactAPI />} />
-          <Route path="/react-redux" element={<ReactRedux />} />
-          <Route path="/react-communication" element={<Communication />} />
-          <Route path="/react-dnd" element={<BeautDnD />} />
-          <Route path="/react-mapInput" element={<MapInput />} />
-        </Routes>
-      </div>
-      <Footer />
+          <Route path="react-hooks" element={<ReactHooks />} />
+          <Route path="react-components" element={<ReactComponents />} />
+          <Route path="react-redux" element={<ReactRedux />} />
+          <Route path="react-communication" element={<Communication />} />
+        </Route>
+
+        <Route path="react-router" element={<ReactRouter />} />
+        <Route path="react-dnd" element={<BeautDnD />} />
+        <Route path="react-mapInput" element={<MapInput />} />
+      </Routes>
     </div>
   );
 }
