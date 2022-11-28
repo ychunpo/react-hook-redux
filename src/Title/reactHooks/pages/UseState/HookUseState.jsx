@@ -50,7 +50,6 @@ const HookUseState = () => {
           </Typography>
 
           <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 3, justifyContent: 'center' }}>
-
             <Paper sx={{ backgroundColor: 'grey.100' }}>
               <Box p={1}>
                 <Box mb={3} sx={{ display: 'flex', justifyContent: 'center' }}>
@@ -66,7 +65,6 @@ const HookUseState = () => {
                     <Typography m='0 6px' sx={{}}>
                       Code
                     </Typography>
-
                   </AccordionSummary>
                   <AccordionDetails>
                     <AppClassCode />
@@ -90,7 +88,6 @@ const HookUseState = () => {
                     <Typography m='0 6px' sx={{}}>
                       Code
                     </Typography>
-
                   </AccordionSummary>
                   <AccordionDetails>
                     <AppHookCode />
@@ -98,7 +95,6 @@ const HookUseState = () => {
                 </Accordion>
               </Box>
             </Paper>
-
           </Box>
 
           <Box>

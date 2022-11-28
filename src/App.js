@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Layout from './frame/Layout';
 import Home from './Title/home/Home';
 import ReactHooks from './Title/reactHooks/ReactHooks';
-import ReactComponents from './Title/reactComponents/ReactComponents'
+import ReactFunction from './Title/reactFunction/ReactFunction'
 import ReactRedux from './Title/reactRedux/ReactRedux';
 import ReactRouter from './Title/reactRouter/ReactRouter';
 import Communication from './Title/reactCommunication/Communication';
@@ -21,7 +21,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="react-hooks" element={<ReactHooks />} />
-          <Route path="react-components" element={<ReactComponents />} />
+          <Route path="react-components" element={<ReactFunction />} />
           <Route path="react-redux" element={<ReactRedux />} />
           <Route path="react-communication" element={<Communication />} />
         </Route>

@@ -2,7 +2,13 @@ import React from 'react';
 import PrismRender from '../../../../../frame/components/prism/PrismRender';
 
 const code = `
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import React, {
+  useState, useEffect, useMemo, useCallback
+} from 'react';
+import {
+  Box, Button, Stack, Typography
+} from '@mui/material';
+import { ListFunction } from '../components/ListFunction';
 
 const ListAppUseCallback = () => {
   const [number, setNumber] = useState(0);
@@ -14,8 +20,8 @@ const ListAppUseCallback = () => {
 
   const themeStyle = useMemo(() => {
     return {
-      backgroundColor: dark ? '#006266' : '#F8EFBA',
-      color: '#F97F51'
+      backgroundColor: dark ? '#002f6c' : '#F8EFBA',
+      color: '#a4a4a4',
     }
   }, [dark])
 
@@ -32,41 +38,57 @@ const ListAppUseCallback = () => {
   }
 
   return (
-    <div className='list-example-container' style={themeStyle}>
-      <div className='list-app-wrapper'>
-        <div className='list-app-inputGroup'>
-          <h3>Function - UseCallback</h3>
-          <input type='number' value={number} onChange={changeHandler} />
-          <div className='list-app-doubleNumber'>
-            <span className='list-app-span'>Result: </span>
-            <ListFunction getItems={getItems}></ListFunction>
-          </div>
-        </div>
-        <button className='list-app-btn' onClick={changeTheme}>Change Theme</button>
-      </div>
-    </div>
+    <Box sx={{ p: 2 }}
+      style={themeStyle}
+    >
+      <Box>
+        <Typography
+          variant='h6'
+          textAlign='center'
+        >
+          Function - UseCallback
+        </Typography>
+        <Stack sx={{ p: 2 }}>
+          <input
+            style={{
+              padding: '5px',
+              margin: '0 auto'
+            }}
+            type='number'
+            value={number}
+            onChange={changeHandler}
+          />
+          <Box
+            sx={{
+              m: '0 auto',
+              p: 2
+            }}
+          >
+            <span>Result: </span>
+            <ListFunction getItems={getItems} />
+          </Box>
+          <Button
+            sx={{
+              color: '#a4a4a4'
+            }}
+            variant='outlined'
+            onClick={changeTheme}
+          >
+            Change Theme
+          </Button>
+        </Stack>
+      </Box>
+    </Box>
   )
 }
-
-export const ListFunction = ({ getItems }) => {
-  const [item, setItems] = useState([])
-  useEffect(() => {
-    setItems(getItems())
-    console.log('Update Items')
-  }, [getItems])
-  return item.map(item => <span key={item}>{item} , </span>)
-}
-
 export default ListAppUseCallback;
 `.trim();
 
 const ListAppUseCallbackCode = () => {
-
   return (
     <>
       <PrismRender code={code} />
     </>
   )
 }
-
 export default ListAppUseCallbackCode;

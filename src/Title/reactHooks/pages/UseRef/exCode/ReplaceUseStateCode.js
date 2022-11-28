@@ -3,11 +3,12 @@ import PrismRender from '../../../../../frame/components/prism/PrismRender';
 
 const code = `
 import React, { useState, useRef } from 'react';
-import './render_count.scss';
+import { Box, Stack, Typography } from '@mui/material';
+import '../scss/render_count.scss';
 
 const ReplaceUseState = () => {
-  const [stateExp, setStateExp] = useState(1000);
-  const refExp = useRef(1000);
+  const [stateExp, setStateExp] = useState(100);
+  const refExp = useRef(100);
 
   const spendStateMoney = () => setStateExp(prevVal => prevVal - 1);
 
@@ -17,33 +18,51 @@ const ReplaceUseState = () => {
   };
 
   return (
-    <div className='useRef-container'>
-      <div className='useRef-main'>
-        <div className='useRef-title'>
-          <h3>Example - useRef 取代 useState ? </h3>
-          <p>不能，因為 useRef 不會觸發 re-render</p>
-        </div>
+    <Box className='useRef-container'>
+      <Box>
+        <Stack
+          sx={{ gap: 1 }}
+          textAlign='center'
+        >
+          <Typography
+            variant='h6'
+          >
+            Example - useRef 不能取代 useState
+          </Typography>
+          <Typography>
+            ***因為 useRef 不會觸發 re-render***
+          </Typography>
+        </Stack>
         <section className="useRef-border">
-
-          <div className="useRef-values">
-            <span>useState value: \${stateExp}</span>
-            <button className='useRef-btn' onClick={spendStateMoney}>Spend</button>
-          </div>
-          <div className="useRef-values">
-            <span>useRef value: \${refExp.current}</span>
-            <button className='useRef-btn' onClick={spendRefMoney}>Spend</button>
-          </div>
+          <Stack sx={{ p: 1, gap: 1 }}>
+            <Typography>
+              useState value: {stateExp}
+            </Typography>
+            <button
+              className='useRef-btn'
+              onClick={spendStateMoney}>
+              Spend
+            </button>
+          </Stack>
+          <Stack sx={{ p: 1, gap: 1 }}>
+            <Typography>
+              useRef value: {refExp.current}
+            </Typography>
+            <button
+              className='useRef-btn'
+              onClick={spendRefMoney}>
+              Spend
+            </button>
+          </Stack>
         </section>
-      </div>
-    </div>
+      </Box>
+    </Box>
   )
 }
-
 export default ReplaceUseState;
 `.trim();
 
 const ReplaceUseStateCode = () => {
-
   return (
     <>
       <PrismRender code={code} />

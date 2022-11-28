@@ -1,18 +1,19 @@
 import React from 'react'
-import { Box, Container, Typography } from '@mui/material';
-import Once from './example/Once';
-import AfterEveryRender from './example/AfterEveryRender';
-import OnPropsStateChange from './example/OnPropsStateChange';
-import OnUnmount from './example/OnUnmount';
-//import AppClass from './example/AppClass';
-//import AppHook from './example/AppHook';
-//import AppClassCode from './exCode/AppClassCode';
-//import AppHookCode from './exCode/AppHookCode';
-// import Example1 from './example/Example1';
-// import Example2 from './example/Example2';
-// import Example3 from './example/Example3';
-// import Example4 from './example/Example4';
-// import Example5 from './example/Example5';
+import {
+  Accordion, AccordionDetails, AccordionSummary,
+  Box,
+  Container,
+  Paper,
+  Typography
+} from '@mui/material';
+import CodeIcon from '@mui/icons-material/Code';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import OnceTime from './example/OnceTime/OnceTime';
+import AfterEveryRender from './example/AfterEveryRender/AfterEveryRender';
+import AllUseEffect from './example/AllUseEffect/AllUseEffect';
+import OnceTimeCode from './exCode/OnceTimeCode';
+import AfterEveryRenderCode from './exCode/AfterEveryRenderCode';
+import AllUseEffectCode from './exCode/AllUseEffectCode';
 
 const HookUseEffect = () => {
   return (
@@ -38,20 +39,122 @@ const HookUseEffect = () => {
           </Typography>
         </Box>
 
-        <div id='useEffect'>
-          <div className='example-group'>
-            <div>
-              <Once />
-              <AfterEveryRender />
-              <OnPropsStateChange />
-              <OnUnmount />
-            </div>
-            <div>
+        <Box>
+          <Typography
+            variant="h6"
+            gutterBottom
+            sx={{ pt: 2, textAlign: 'center' }}
+          >
 
-            </div>
-          </div>
+          </Typography>
 
-        </div>
+          <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 3, justifyContent: 'center' }}>
+            <Paper sx={{ backgroundColor: 'grey.100' }}>
+              <Box p={1}>
+                <Box mb={3} sx={{ display: 'flex', justifyContent: 'center' }}>
+                  <OnceTime />
+                </Box>
+                <Accordion>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                  >
+                    <Typography mr={1} sx={{}}>
+                      Code
+                    </Typography>
+                    <CodeIcon />
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <OnceTimeCode />
+                  </AccordionDetails>
+                </Accordion>
+              </Box>
+            </Paper>
+
+            <Paper sx={{ backgroundColor: 'grey.100' }}>
+              <Box p={1}>
+                <Box mb={3} sx={{ display: 'flex', justifyContent: 'center' }}>
+                  <AfterEveryRender />
+                </Box>
+                <Accordion>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                  >
+                    <Typography mr={1} sx={{}}>
+                      Code
+                    </Typography>
+                    <CodeIcon />
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <AfterEveryRenderCode />
+                  </AccordionDetails>
+                </Accordion>
+              </Box>
+            </Paper>
+          </Box>
+
+          <Box>
+            <Typography
+              variant="h6"
+              gutterBottom
+              sx={{ pt: 2, textAlign: 'center' }}
+            >
+
+            </Typography>
+
+            <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 3, justifyContent: 'center' }}>
+              <Paper sx={{ backgroundColor: 'grey.100' }}>
+                <Box p={1}>
+                  <Box mb={3} sx={{ display: 'flex', justifyContent: 'center' }}>
+                    <AllUseEffect />
+                  </Box>
+                  <Accordion>
+                    <AccordionSummary
+                      expandIcon={<ExpandMoreIcon />}
+                      aria-controls="panel1a-content"
+                      id="panel1a-header"
+                    >
+                      <Typography mr={1} sx={{}}>
+                        Code
+                      </Typography>
+                      <CodeIcon />
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <AllUseEffectCode />
+                    </AccordionDetails>
+                  </Accordion>
+                </Box>
+              </Paper>
+
+              {/*<Paper sx={{ backgroundColor: 'grey.100' }}>
+                <Box p={1}>
+                  <Box mb={3} sx={{ display: 'flex', justifyContent: 'center' }}>
+
+                  </Box>
+                  <Accordion>
+                    <AccordionSummary
+                      expandIcon={<ExpandMoreIcon />}
+                      aria-controls="panel1a-content"
+                      id="panel1a-header"
+                    >
+                      <Typography mr={1} sx={{}}>
+                        Code
+                      </Typography>
+                      <CodeIcon />
+                    </AccordionSummary>
+                    <AccordionDetails>
+
+                    </AccordionDetails>
+                  </Accordion>
+                </Box>
+          </Paper>*/}
+
+            </Box>
+          </Box>
+        </Box>
       </Box>
     </Container>
   )

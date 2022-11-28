@@ -36,11 +36,10 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
         gutterBottom
         sx={{ pt: 2, textAlign: 'center' }}
       >
-        Class <span> vs </span> Function
+
       </Typography>
 
       <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 3, justifyContent: 'center' }}>
-
         <Paper sx={{ backgroundColor: 'grey.100' }}>
           <Box p={1}>
             <Box mb={3} sx={{ display: 'flex', justifyContent: 'center' }}>
@@ -95,7 +94,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
           gutterBottom
           sx={{ pt: 2, textAlign: 'center' }}
         >
-          Direct Update <span> vs </span> Functional Update
+
         </Typography>
 
         <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 3, justifyContent: 'center' }}>
@@ -130,7 +129,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
           gutterBottom
           sx={{ pt: 2, textAlign: 'center' }}
         >
-          Other Example
+
         </Typography>
 
         <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 3, justifyContent: 'center' }}>
@@ -158,7 +157,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
           </Paper>
         </Box>
       </Box>
-
     </Box>
+
   </Box>
 </Container>

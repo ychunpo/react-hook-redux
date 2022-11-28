@@ -3,6 +3,9 @@ import PrismRender from '../../../../../frame/components/prism/PrismRender';
 
 const code = `
 import React, { useState } from 'react';
+import { Box, Button, Typography } from '@mui/material';
+import { slowFunction } from '../components/slowFunction';
+import '../../scss/slow_app.scss';
 
 const SlowAppNoUseMemo = () => {
   const [number, setNumber] = useState(0);
@@ -24,33 +27,52 @@ const SlowAppNoUseMemo = () => {
   }
 
   return (
-    <div className='slow-example-container' style={themeStyle}>
-      <div className='slow-wrapper'>
-        <div className='slow-inputGroup'>
-          <h3>Function - no useMemo</h3>
-          <p>Number is {number}</p>
-          <input className='slow-input'
-            type='number'
-            value={number}
-            onChange={changeHandler}
-          />
-          <div className='slow-doubleNumber'>
-            <span className='slow-span'>Result: </span>
-            {doubleNumber}
-          </div>
-          <button className='slow-btn' onClick={changeTheme}>Change Theme</button>
-        </div>
-      </div>
-    </div>
+    <Box
+      className='slow-example-container'
+      style={themeStyle}
+    >
+      <Box className='slow-wrapper'>
+        <Box>
+          <Typography
+            variant='h6'
+            textAlign='center'
+          >
+            Function - no useMemo
+          </Typography>
+          <Box
+            textAlign='center'
+            sx={{
+              p: 2,
+            }}
+          >
+            <Typography>
+              Number is {number}
+            </Typography>
+            <input
+              style={themeStyle}
+              className='slow-input'
+              type='number'
+              value={number}
+              onChange={changeHandler}
+            />
+            <Typography>
+              Result: {doubleNumber}
+            </Typography>
+          </Box>
+          <Box display='flex' justifyContent='center'>
+            <Button
+              className='slow-btn'
+              variant='outlined'
+              onClick={changeTheme}
+            >
+              Change Theme
+            </Button>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
   )
 }
-
-function slowFunction(number) {
-  console.log('Calling slow Function');
-  for (let i = 0; i <= 99999; i++) { }
-  return number * 2;
-}
-
 export default SlowAppNoUseMemo;
 `.trim();
 

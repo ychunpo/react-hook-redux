@@ -3,6 +3,7 @@ import PrismRender from '../../../../../frame/components/prism/PrismRender';
 
 const code = `
 import React, { createContext } from "react";
+import { Box, Stack, Typography } from '@mui/material';
 
 const { Provider, Consumer } = createContext(null);
 
@@ -10,9 +11,13 @@ function Bar() {
   return (
     <Consumer>
       {color =>
-        <div className='example-container'>
-          {color}
-        </div>}
+        <Box sx={{ p: 1 }}>
+          <Typography
+            textAlign="center"
+          >
+            {color}
+          </Typography>
+        </Box>}
     </Consumer>
   )
 }
@@ -24,16 +29,21 @@ function Foo() {
 function WithoutUseContext() {
   return (
     <Provider value={"grey"}>
-      <Foo />
+      <Stack>
+        <Typography
+          textAlign="center"
+        >
+          沒用 useContext
+        </Typography>
+        <Foo />
+      </Stack>
     </Provider>
   );
 }
-
 export default WithoutUseContext;
-
 `.trim();
 
-const sample = () => {
+const WithoutUseContextCode = () => {
 
   return (
     <>
@@ -42,4 +52,4 @@ const sample = () => {
   )
 }
 
-export default sample;
+export default WithoutUseContextCode;
