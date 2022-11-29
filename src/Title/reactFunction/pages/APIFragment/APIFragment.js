@@ -8,4 +8,4 @@ const APIFragment = () => {
   )
 }
 
-export default APIFragment
+export default APIFragment;

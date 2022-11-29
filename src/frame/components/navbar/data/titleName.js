@@ -12,13 +12,13 @@ export const titleList = [
     link: '/react-hooks',
   },
   {
-    name: 'Redux',
-    link: '/react-redux',
-  },
-  {
     name: '傳值',
     link: '/react-communication',
   },
+  // {
+  //   name: 'Redux',
+  //   link: '/react-redux',
+  // },
 ]
 
 

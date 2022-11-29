@@ -32,7 +32,7 @@ const Overview = () => {
         }}
       >
         <Typography variant="h6">
-          記錄常見的運用方法
+          記錄 React 常見的運用方法
         </Typography>
         <Typography variant="h6">
           React 版本: 18.2.0

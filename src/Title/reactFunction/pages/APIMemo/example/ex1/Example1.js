@@ -1,7 +1,3 @@
-import React from 'react';
-import PrismRender from '../../../../../frame/components/prism/PrismRender';
-
-const code = `
 import React, { useState, memo } from "react";
 import { Box, Button, Divider, Stack, Typography } from "@mui/material";
 
@@ -61,14 +57,3 @@ const ChildMemo = memo((props) => {
 }, isEqual);
 
 export default Example1;
-`.trim();
-
-const sample = () => {
-  return (
-    <>
-      <PrismRender code={code} />
-    </>
-  )
-}
-
-export default sample;

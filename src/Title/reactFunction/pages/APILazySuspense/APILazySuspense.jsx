@@ -11,7 +11,8 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Example1 from './example/ex1/Example1';
 import Example1ExCode1 from './exCode/ExCode1';
 
-const APIMemo = () => {
+
+const APILazySuspense = () => {
   return (
     <Container maxWidth="xl">
       <Box >
@@ -31,7 +32,7 @@ const APIMemo = () => {
               boxShadow: 2
             }}
           >
-            Memo
+            Lazy and Suspense
           </Typography>
         </Box>
 
@@ -89,7 +90,7 @@ const APIMemo = () => {
                   </AccordionDetails>
                 </Accordion>
               </Box>
-          </Paper>*/}
+          </Paper> */}
 
           </Box>
         </Box>
@@ -97,5 +98,4 @@ const APIMemo = () => {
     </Container>
   )
 }
-
-export default APIMemo;
+export default APILazySuspense;

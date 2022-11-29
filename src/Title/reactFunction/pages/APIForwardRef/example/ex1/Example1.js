@@ -1,7 +1,3 @@
-import React from 'react';
-import PrismRender from '../../../../../frame/components/prism/PrismRender';
-
-const code = `
 import { useRef, forwardRef, useState } from "react";
 import {
   Box, Button, Stack, Typography
@@ -44,15 +40,3 @@ const Child = forwardRef((props, ref) => {
 });
 
 export default Example1;
-`.trim();
-
-const sample = () => {
-
-  return (
-    <>
-      <PrismRender code={code} />
-    </>
-  )
-}
-
-export default sample;

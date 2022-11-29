@@ -1,46 +1,43 @@
 import React from 'react';
-import { topic, listData } from './Data/listData';
-import APIComponent from './pages/APIComponent/APIComponent';
-import APIPureComponent from './pages/APIPure/APIPure';
+import { Box, Container, Divider } from '@mui/material';
+//import APIComponent from './pages/APIComponent/APIComponent';
+//import APIPureComponent from './pages/APIPure/APIPure';
 import APIMemo from './pages/APIMemo/APIMemo';
 import APIForwardRef from './pages/APIForwardRef/APIForwardRef';
-import APILazy from './pages/APILazy/APILazy';
-import APISuspense from './pages/APISuspense/APISuspense';
-import APIFragment from './pages/APISuspense/APISuspense';
+import APILazySuspense from './pages/APILazySuspense/APILazySuspense';
+
+//import APIFragment from './pages/APIFragment/APIFragment';
 import APIProfiler from './pages/APIProfiler/APIProfiler';
-import APIStrickMode from './pages/APIStrictMode/APIStrictMode';
+//import APIStrickMode from './pages/APIStrictMode/APIStrictMode';
 import '../pages.css';
 
 const ReactAPI = () => {
 
-  return (
-    <div className='main-container'>
-      <div className='main-left'>
+  const functionRecord = [
+    <APIMemo />,
+    <APIForwardRef />,
+    <APILazySuspense />,
+    //<APIProfiler />,
+  ]
 
-      </div>
-      <div className='main-right'>
-        <h1>This page is under construction......</h1>
-        <br />
-        <APIComponent />
-        <hr />
-        <APIPureComponent />
-        <hr />
-        <APIMemo />
-        <hr />
-        <APIForwardRef />
-        <hr />
-        <APILazy />
-        <hr />
-        <APISuspense />
-        <hr />
-        <APIFragment />
-        <hr />
-        <APIProfiler />
-        <hr />
-        <APIStrickMode />
-      </div>
-    </div>
+  return (
+    <>
+      <Container maxWidth="xl">
+        {
+          functionRecord.map((item, i) => {
+            return (
+              <Box
+                key={i}
+                sx={{ p: 1 }}
+              >
+                {item}
+                <Divider sx={{ m: 1 }} />
+              </Box>
+            )
+          })
+        }
+      </Container>
+    </>
   )
 }
-
 export default ReactAPI;
