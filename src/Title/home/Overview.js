@@ -1,13 +1,13 @@
 import React from 'react';
 import { Avatar, Box, Container, Stack, Typography } from '@mui/material';
-import nameSquare from '../../assets/initialism_name_square.png';
+import nameSquare from '../../assets/initialism_name_square-bg-w500.png';
 
 const Overview = () => {
   return (
     <Container maxWidth="md">
       <Box sx={{ pt: 3, display: 'flex', justifyContent: 'center' }}>
         <Avatar
-          sx={{ width: 80, height: 80 }}
+          sx={{ width: 100, height: 100, padding: '1px' }}
           src={nameSquare}
           alt="color logo"
         />

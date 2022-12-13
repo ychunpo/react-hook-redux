@@ -1,19 +1,19 @@
 export const titleList = [
   {
     name: 'Home',
-    link: '/',
+    link: 'react-practices/',
   },
   {
     name: '功能',
-    link: '/react-components',
+    link: 'react-practices/react-components',
   },
   {
     name: 'Hook',
-    link: '/react-hooks',
+    link: 'react-practices/react-hooks',
   },
   {
     name: '傳值',
-    link: '/react-communication',
+    link: 'react-practices/react-communication',
   },
   // {
   //   name: 'Redux',

@@ -5,7 +5,7 @@ import './logo.css';
 
 const Logo = () => {
   return (
-    <Link className="logo-link" to='/'>
+    <Link className="logo-link" to='react-practices/'>
       <img className="logo-size" src={logo} alt='Logo' />
     </Link>
   )

@@ -18,14 +18,14 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Home />} />
+        <Route path="react-practices/" element={<Layout />}>
+          <Route path="" element={<Home />} />
           <Route path="react-hooks" element={<ReactHooks />} />
           <Route path="react-components" element={<ReactFunction />} />
-          <Route path="react-redux" element={<ReactRedux />} />
           <Route path="react-communication" element={<Communication />} />
         </Route>
 
+        <Route path="react-practices/react-redux" element={<ReactRedux />} />
         <Route path="react-router" element={<ReactRouter />} />
         <Route path="react-dnd" element={<BeautDnD />} />
         <Route path="react-mapInput" element={<MapInput />} />
