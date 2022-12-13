@@ -11,6 +11,7 @@ import BeautDnD from './BeautifulDnDTable/pages/BeautDnD';
 import MapInput from './Title/mapInput/MapInput';
 import Navbar from './frame/components/navbar/Navbar';
 import './App.css';
+import GoToTop from './frame/components/backToTop/GoToTop';
 //import Sidebar from './components/Sidebar/Sidebar';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path="react-dnd" element={<BeautDnD />} />
         <Route path="react-mapInput" element={<MapInput />} />
       </Routes>
+      <GoToTop />
     </div>
   );
 }
