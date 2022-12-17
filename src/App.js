@@ -13,6 +13,7 @@ import Navbar from './frame/components/navbar/Navbar';
 import './App.css';
 import GoToTop from './frame/components/backToTop/GoToTop';
 //import Sidebar from './components/Sidebar/Sidebar';
+//import ImagesGallery from './ImagesGalleryFirebase/MainApp';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="react-hooks" element={<ReactHooks />} />
           <Route path="react-components" element={<ReactFunction />} />
           <Route path="react-communication" element={<Communication />} />
+          {/*<Route path="react-gallery" element={<ImagesGallery />} />*/}
         </Route>
 
         <Route path="react-practices/react-redux" element={<ReactRedux />} />

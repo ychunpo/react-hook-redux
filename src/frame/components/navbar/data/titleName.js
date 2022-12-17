@@ -19,6 +19,10 @@ export const titleList = [
   //   name: 'Redux',
   //   link: '/react-redux',
   // },
+  // {
+  //   name: '相簿',
+  //   link: 'react-practices/react-gallery',
+  // },
 ]
 
 
