@@ -7,7 +7,7 @@ import APIForwardRef from './pages/APIForwardRef/APIForwardRef';
 import APILazySuspense from './pages/APILazySuspense/APILazySuspense';
 
 //import APIFragment from './pages/APIFragment/APIFragment';
-import APIProfiler from './pages/APIProfiler/APIProfiler';
+//import APIProfiler from './pages/APIProfiler/APIProfiler';
 //import APIStrickMode from './pages/APIStrictMode/APIStrictMode';
 import '../pages.css';
 
