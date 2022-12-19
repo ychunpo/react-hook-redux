@@ -4,7 +4,6 @@ import ImageListItem from '@mui/material/ImageListItem';
 //import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox';
 import { Avatar, Tooltip, Typography } from '@mui/material';
 import moment from 'moment';
-//import profileImg from '../../img/profile.jpeg';
 import Options from './Options';
 import useFireStore from '../../firebase/useFireStore';
 
