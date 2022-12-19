@@ -55,18 +55,10 @@ const AuthContext = ({ children }) => {
   }, []);
 
   const value = {
-    currentUser,
-    signUp,
-    login,
-    logout,
-    modal,
-    setModal,
-    loginWithGoogle,
-    alert,
-    setAlert,
-    loading,
-    setLoading,
-    resetPassword,
+    currentUser, signUp, login,
+    logout, modal, setModal,
+    loginWithGoogle, alert, setAlert,
+    loading, setLoading, resetPassword,
   };
   return <authContext.Provider {...{ value }}>{children}</authContext.Provider>;
 };
