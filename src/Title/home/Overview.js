@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar, Box, Container, Stack, Typography } from '@mui/material';
+import { Avatar, Box, Container, Typography } from '@mui/material';
 import nameSquare from '../../assets/initialism_name_square-bg-w500.png';
 
 const Overview = () => {
